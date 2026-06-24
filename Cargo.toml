@@ -26,7 +26,7 @@ doctest = false
 [dependencies]
 paddle-rust-sdk-types = { path = "./paddle-rust-sdk-types", version = "0.2" }
 
-reqwest = { version = "0.13", default-features = false, features = [
+reqwest = { version = "0.12", default-features = false, features = [
   "charset",
   "http2",
   "system-proxy",
@@ -51,5 +51,5 @@ default = ["native-certs"]
 strum = ["dep:strum", "paddle-rust-sdk-types/strum"]
 
 native-certs = ["reqwest/native-tls"]
-rustls-native-roots = ["reqwest/rustls"]
-rustls-webpki-roots = ["reqwest/rustls"]
+rustls-native-roots = ["reqwest/rustls-tls-native-roots"]
+rustls-webpki-roots = ["reqwest/rustls-tls-webpki-roots"]
