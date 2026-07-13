@@ -419,7 +419,7 @@ pub struct PayPal {
     /// Email address associated with the PayPal account.
     pub email: String,
     /// PayPal payment method identifier.
-    pub reference: String,
+    pub reference: Option<String>,
 }
 
 /// Korean local credit or debit card metadata
