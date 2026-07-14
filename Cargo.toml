@@ -9,7 +9,7 @@ serde_with = "3.21"
 strum = { version = ">=0.26,<0.29", features = ["derive"] }
 
 [package]
-version = "0.20.0"
+version = "0.20.1"
 name = "paddle-rust-sdk"
 description = "Rust SDK for working with the Paddle API in server-side apps. (Unofficial)"
 license = "Apache-2.0"
