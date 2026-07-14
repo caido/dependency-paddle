@@ -431,6 +431,15 @@ pub struct SouthKoreaLocalCard {
     pub last4: String,
 }
 
+/// Korean local credit or debit card metadata
+#[derive(Clone, Debug, Serialize, Deserialize)]
+pub struct SouthKoreaLocalCard {
+    /// Type of Korean payment method used to pay.
+    pub r#type: SouthKoreaLocalCardType,
+    /// Last four digits of the card used to pay.
+    pub last4: String,
+}
+
 /// Represents a customer payment method entity.
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct PaymentMethod {
